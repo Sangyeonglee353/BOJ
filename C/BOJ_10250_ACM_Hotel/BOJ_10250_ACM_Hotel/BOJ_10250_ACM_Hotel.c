@@ -13,7 +13,7 @@ int main(void)
 	while (T--)
 	{
 		scanf("%d %d %d", &H, &W, &N);
-		floor = N & H;
+		floor = N % H;
 		if (floor == 0)
 		{
 			floor = H;
