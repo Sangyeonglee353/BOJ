@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BOJ_1011_Alpha_Centauri_2", "BOJ_1011_Alpha_Centauri_2\BOJ_1011_Alpha_Centauri_2.vcxproj", "{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Debug|x64.ActiveCfg = Debug|x64
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Debug|x64.Build.0 = Debug|x64
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Debug|x86.Build.0 = Debug|Win32
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Release|x64.ActiveCfg = Release|x64
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Release|x64.Build.0 = Release|x64
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Release|x86.ActiveCfg = Release|Win32
+		{DA9968DC-B89D-4F0E-8267-2E9A20901DE8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B16215B2-05B4-49EA-85BA-5DC3A7D6A71B}
+	EndGlobalSection
+EndGlobal
