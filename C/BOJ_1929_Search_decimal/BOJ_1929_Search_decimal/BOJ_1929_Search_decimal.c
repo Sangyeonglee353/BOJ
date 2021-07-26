@@ -1,24 +1,28 @@
 // BOJ_1929_Search_decimal, 소수 찾기
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#define size 1000001
 
 int main(void)
 {
 	int M, N, i, j;
-	int arr[1000001] = { 0, };
+	int arr[size] = { 0, };
 
 	arr[0] = 1, arr[1] = 1;
-	for (j = 2; i < 1000001 / j; j++)
+	for (j = 2; j < size / j; j++)
 	{
 		if (arr[j] == 1)
 		{
 			continue;
 		}
-		for (i = j * j; i < 1000001; i += j)
+		else
 		{
-			if (i % j == 0)
+			for (i = j * j; i < size; i += j)
 			{
-				arr[i] = 1;
+				if (i % j == 0)
+				{
+					arr[i] = 1;
+				}
 			}
 		}
 	}
@@ -33,5 +37,4 @@ int main(void)
 	}
 	return 0;
 }
-
 
