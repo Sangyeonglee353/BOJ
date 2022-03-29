@@ -1,10 +1,10 @@
 # BOJ_2750 수 정렬하기
 n = int(input())
-list = []
-for i in range(n):
-    list.append(input())
+num = []
+for _ in range(n):
+    num.append(int(input()))
 
-list.sort()
+num.sort()
 
-for i in range(n):
-    print(list[i])
+for i in num:
+    print(i)
