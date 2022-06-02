@@ -1,16 +1,20 @@
 # BOJ_9465 스티커
 import sys
 input = sys.stdin.readline
-tc = int(input())
-for _ in range(tc):
+num = int(input())
+
+for i in range(num):
     n = int(input())
-    dp = []
-    for _ in range(2):
-        dp.append(list(map(int, input().split())))
-    dp[0][1] += dp[1][0]
-    dp[1][1] += dp[0][0]
-    
-    for i in range(2, n):
-        dp[0][i] += max(dp[1][i-1], dp[1][i-2])
-        dp[1][i] += max(dp[0][i-1], dp[0][i-2])
-    print(max(dp[0][n-1], dp[1][n-1]))
+    li = []
+    li.append(list(map(int,input().split())))
+    li.append(list(map(int,input().split())))
+
+    max_list = [[] for i in range(n)]
+
+    max_list[0] = [li[0][0],li[1][0]]
+
+    for i in range(1,n):
+        max_list[i].append(max(max_list[i-1][0],li[0][i]+max_list[i-1][1]))
+        max_list[i].append(max(max_list[i-1][1],li[1][i]+max_list[i-1][0]))
+
+    print(max(max_list[n-1]))
